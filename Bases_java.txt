@@ -1,0 +1,32 @@
+package pacoteprincipal;
+
+import java.util.Scanner;
+
+public class Principal3 {
+	public static void main(String[] args) {
+		//Pedir os valores ao usuario
+		System.out.println("Digite dois numeros:");
+		Scanner	in = new Scanner(System.in);
+		Integer num1 = in.nextInt();
+		Integer num2 = in.nextInt();
+
+		//1)Somar dois números e imprimir em binário
+		Integer soma = num1 + num2;
+		System.out.println("Soma em binario = "+ Integer.toBinaryString(soma));
+
+		//2)Subtrair dois números e imprimir em binárioInteger.toBinaryString(soma)
+		Integer subt = num1 - num2;
+		System.out.println("Subtração em binario = "+ Integer.toBinaryString(subt));
+
+		//3)Multiplicar dois número e imprimir em hexadecimal
+		Integer mult = num1 * num2;
+		System.out.println("Multiplicação em hexadecimal = "+ Integer.toHexString(mult).toUpperCase());
+
+		//4)Somar três e imprimir em octal.
+		System.out.println("Digite mais um numero:");
+		Integer num3 = in.nextInt();
+		Integer soma3 = num1 + num2 + num3;
+		System.out.println("Soma em octal = "+ Integer.toOctalString(soma3));
+
+	}
+}

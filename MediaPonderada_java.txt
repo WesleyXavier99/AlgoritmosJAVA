@@ -1,0 +1,33 @@
+package pacoteprincipal;
+
+import java.util.Scanner;
+
+//1)Criar um progrma que calcule a média ponderada de 3 notas
+//N1 - 40 %
+//N2 - 30%
+//N3 - 30%
+//No final, o programa deve informar se o aluno está aprovado ou em AVF.
+//Observação: Média > 6
+
+public class Principal4 {
+	public static void main(String[] args) {
+		//pedir as notas
+		System.out.println("Digite as 3 notas");
+		Scanner in = new Scanner(System.in);
+		float n1 = in.nextFloat();
+		float n2 = in.nextFloat();
+		float n3 = in.nextFloat();
+
+		//calcular a media ponderada
+		float mediaP = ((n1*4)+(n2*3)+(n3*3))/(4+3+3);
+
+		System.out.println("A media do aluno é: "+mediaP);
+
+		//verificar situação
+		if(mediaP>6){
+			System.out.println("O aluno está aprovado!");
+		}else{
+			System.out.println("O aluno está em AVF!");
+		}
+	}
+}
